@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/My-Portfolio/static/css/main.37cef1b1.chunk.css",
+    "main.js": "/My-Portfolio/static/js/main.77a5ee35.chunk.js",
+    "main.js.map": "/My-Portfolio/static/js/main.77a5ee35.chunk.js.map",
+    "runtime-main.js": "/My-Portfolio/static/js/runtime-main.6b62a6af.js",
+    "runtime-main.js.map": "/My-Portfolio/static/js/runtime-main.6b62a6af.js.map",
+    "static/js/2.9560e7e5.chunk.js": "/My-Portfolio/static/js/2.9560e7e5.chunk.js",
+    "static/js/2.9560e7e5.chunk.js.map": "/My-Portfolio/static/js/2.9560e7e5.chunk.js.map",
+    "index.html": "/My-Portfolio/index.html",
+    "static/css/main.37cef1b1.chunk.css.map": "/My-Portfolio/static/css/main.37cef1b1.chunk.css.map",
+    "static/js/2.9560e7e5.chunk.js.LICENSE.txt": "/My-Portfolio/static/js/2.9560e7e5.chunk.js.LICENSE.txt",
+    "static/media/BreakingBad.4a4c9054.png": "/My-Portfolio/static/media/BreakingBad.4a4c9054.png",
+    "static/media/My Cv.b0f4f2e6.pdf": "/My-Portfolio/static/media/My Cv.b0f4f2e6.pdf",
+    "static/media/Pro Pic.d56ef294.jpeg": "/My-Portfolio/static/media/Pro Pic.d56ef294.jpeg",
+    "static/media/App.css": "/My-Portfolio/static/media/gihy.9a6f2943.gif",
+    "static/media/instagramclone.cf4d57da.png": "/My-Portfolio/static/media/instagramclone.cf4d57da.png",
+    "static/media/internshipnow.447c3c60.jpg": "/My-Portfolio/static/media/internshipnow.447c3c60.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b62a6af.js",
+    "static/js/2.9560e7e5.chunk.js",
+    "static/css/main.37cef1b1.chunk.css",
+    "static/js/main.77a5ee35.chunk.js"
+  ]
+}
