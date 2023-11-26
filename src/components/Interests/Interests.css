@@ -1,0 +1,47 @@
+/* interests section styling */
+.interests,
+.projects {
+	color: #fff;
+	background: #111;
+}
+.interests .title::before,
+.projects .title::before {
+	background: #fff;
+}
+.interests .title::after,
+.projects .title::after {
+	background: #111;
+	content: "Things I Love";
+}
+.interests .serv-content .card {
+	width: calc(33% - 20px);
+	background: #222;
+	text-align: center;
+	border-radius: 6px;
+	padding: 20px 25px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.interests .serv-content .card:hover {
+	background: rgb(181, 0, 252);
+}
+.interests .serv-content .card .box {
+	transition: all 0.3s ease;
+}
+.interests .serv-content .card:hover .box {
+	transform: scale(1.05);
+}
+.interestIcons {
+	font-size: 50px;
+	color: rgb(181, 0, 252);
+	transition: color 0.3s ease;
+	
+}
+.interests .serv-content .card:hover .interestIcons {
+	color: #fff;
+}
+.interests .serv-content .card .text {
+	font-size: 25px;
+	font-weight: 500;
+	margin: 10px 0 7px 0;
+}
