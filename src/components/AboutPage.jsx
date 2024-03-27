@@ -71,7 +71,7 @@ const AboutPage = () => {
                 <ParticleComponent theme='dark' />
 
                 <Spaceman>
-                    <img src={"/assets/Images/spaceman.png"} alt="spaceman" />
+                    <img src={"/assets/images/spaceman.png"} alt="spaceman" />
                 </Spaceman>
                 <Main>
                     I am a full-stack developer with a passion for web development and a keen interest in machine learning and artificial intelligence.
