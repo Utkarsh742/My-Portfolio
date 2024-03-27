@@ -1,6 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 // import { NavLink } from 'react-router-dom'
 import styled from "styled-components";
 import { Github, LinkedIn } from "../components/AllSvgs";
@@ -35,7 +35,17 @@ const Line = styled(motion.span)`
 
 const SocialIcons = (props) => {
   const router = usePathname();
+  const [display, setDisplay] = useState(false)
+
+  useEffect(() => {
+    if(typeof window !== 'undefined') {
+      setDisplay(true);
+    }
+  }
+  , [])
+
   return (
+    display &&
     <Icons sdisplay={props.sdisplay}>
       <motion.div
         initial={{ scale: 0 }}
@@ -50,7 +60,7 @@ const SocialIcons = (props) => {
           <Github
             width={25}
             height={25}
-            fill={window.innerWidth < 768 && router === '/' && props.theme === 'dark' ? DarkTheme.body : props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+            fill={window?.innerWidth < 768 && router === '/' && props.theme === 'dark' ? DarkTheme.body : props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
           />
         </a>
       </motion.div>
@@ -107,7 +117,7 @@ const SocialIcons = (props) => {
       </motion.div> */}
 
       <Line
-        color={window.innerWidth < 768 && router === '/' && props.theme === 'dark' ? DarkTheme.body : props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
+        color={window?.innerWidth < 768 && router === '/' && props.theme === 'dark' ? DarkTheme.body : props.theme === "dark" ? DarkTheme.text : DarkTheme.body}
         initial={{
           height: 0,
         }}

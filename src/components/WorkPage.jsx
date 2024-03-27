@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./Themes";
@@ -71,15 +72,15 @@ const WorkPage = () => {
     let element = ref.current;
 
     const rotate = () => {
-      element.style.transform = `translateX(${-window.scrollY}px)`;
+      element.style.transform = `translateX(${-window?.scrollY}px)`;
 
       // Fix: use yinyangRef.current instead of yinyang to reference the current element
-      yinyangRef.current.style.transform = `rotate(${-window.scrollY}deg)`;
+      yinyangRef.current.style.transform = `rotate(${-window?.scrollY}deg)`;
     };
 
-    window.addEventListener("scroll", rotate);
+    window?.addEventListener("scroll", rotate);
     return () => {
-      window.removeEventListener("scroll", rotate);
+      window?.removeEventListener("scroll", rotate);
     };
   }, []);
 
