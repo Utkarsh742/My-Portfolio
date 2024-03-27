@@ -1,45 +1,39 @@
-"use client";
-import {About, Contact, Footer, Hero, Interests, Navbar, Projects, Skills} from '../components'
-import { FaAngleUp } from "react-icons/fa";
-import { useEffect, useState } from 'react';
+'use client'
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import Main from "@/components/Main";
+import { lightTheme } from "@/components/Themes";
+import { AnimatePresence } from "framer-motion";
+
+const GlobalStyle = createGlobalStyle`
+
+*,*::before,*::after,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    display: inline-block;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+`
+
 
 export default function Home() {
-  const [showScrollButton, setShowScrollButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 500) {
-        setShowScrollButton(true);
-      } else {
-        setShowScrollButton(false);
-      }
-    };
-
-    // Attach the event listener when the component mounts
-    window.addEventListener('scroll', handleScroll);
-
-    // Detach the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []); // Empty dependency array means this effect runs once after the initial render
-
-  const handleClicked = () => {
-    window.scrollTo(0,0)
-  }
   return (
-     <div>
-    <div className={`scroll-up-btn ${showScrollButton ? 'show' : ''}`} onClick={handleClicked}>
-        <FaAngleUp/>
-    </div>
-     <Navbar/>
-     <Hero/>
-     <About/>
-     <Interests/>
-     <Skills/>
-     <Projects/>
-     <Contact/>
-     <Footer/>
-     </div>
-  )
+    <>
+    <GlobalStyle/>
+    <ThemeProvider theme={lightTheme}>
+    <AnimatePresence mode="wait">
+     <Main/>
+     </AnimatePresence>
+    </ThemeProvider>
+     </>
+  );
 }
