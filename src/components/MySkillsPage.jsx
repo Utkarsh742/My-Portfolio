@@ -133,7 +133,7 @@ const MySkillsPage = () => {
               <Develope width={40} height={40} /> Developer
             </Title>
             <Description>
-              I value business or brand for which i'm working for, and hence enjoy
+              I value business or brand for which I'm working for, and hence enjoy
               bringing new ideas to life by learning new technologies.
             </Description>
             <Description $marginTop="0.4rem">
