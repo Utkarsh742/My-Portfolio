@@ -180,8 +180,8 @@ const Main = () => {
             <SocialIcons theme={click ? 'dark' :'light'} />
            
             <Center click={click}>
-                <YinYang  onClick={()=> handleClick()} width={click ? '90%' : 200} height={click ? 120 : 200} fill='currentColor' />
-                <span className={myFont.className}>click here</span>
+                <YinYang onClick={()=> handleClick()} width={click ? '90%' : 200} height={click ? 120 : 200} fill='currentColor' />
+                <span className={myFont.className} onClick={()=> handleClick()}>click here</span>
             </Center>
 
             <Contact click={click} href="/contactme">
@@ -198,7 +198,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Say hi...
                 </motion.h2>
             </Contact>
             <BLOG href="/interests" click={click}>
@@ -214,7 +214,7 @@ const Main = () => {
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Interests
+                    Interests.
                 </motion.h2>
             </BLOG>
             <WORK href="/work" click={click}>
@@ -230,7 +230,7 @@ const Main = () => {
                 whileHover={{scale: 1.1}}
                 whileTap={{scale: 0.9}}
                 >
-                    Work
+                    Work.
                 </motion.h2>
             </WORK>
             <BottomBar>

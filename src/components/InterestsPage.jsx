@@ -58,7 +58,10 @@ const Main = styled.div`
   height: 30vh;
   z-index: 3;
   line-height: 1.5;
-  cursor: pointer;
+  /* cursor: pointer; */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
   font-family: "Ubuntu Mono", monospace;
   display: flex;
@@ -142,7 +145,7 @@ const InterestsPage = () => {
           </Main>
           <Main>
             <Title>
-              <FaChartLine style={{fontSize:"2rem"}}/> Learning new Techs
+              <FaChartLine style={{fontSize:"2rem"}}/> Learning New Techs
             </Title>
             <Description>
               I believe in constantly updating myself by learning something new with practical
