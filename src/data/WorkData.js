@@ -18,15 +18,22 @@ export const Work = [
         
         demo:"https://admin-dashboard.utkarshdwivedi.in/",
         github:"https://github.com/Utkarsh742/Finance-Dashpro"
-        
     },
     {
         id:3,
+        name:"Notes Keeper",
+        description:"A simple, yet effective notes keeper app based on MERN Stack.",
+        tags:["react","tailwind","nodejs","express","mongodb"],
+        demo:"https://notes.utkarshdwivedi.in/",
+        github:"https://github.com/Utkarsh742/Google-Keep-Clone"
+    },
+    {
+        id:4,
         name:"Vulncon 2021",
         description:"Co-developed the website of Vulncon 2021, a Cybersecurity Community.",
         tags:["php","api","Aos","Css3","html5","javascript"],
         
         demo:"https://noobarmy.org/vulncon/",
         github:"https://github.com/Abhinandan-Khurana/VulnCON_2021"
-    }
+    },
 ] 

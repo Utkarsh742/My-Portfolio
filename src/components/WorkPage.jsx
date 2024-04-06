@@ -17,15 +17,15 @@ import ParticlesSnowComponent from "@/subComponents/ParticleSnowComponent";
 const Box = styled.div`
   background-color: ${(props) => props.theme.body};
 
-  height: 170vh;
+  height: 190vh;
   position: relative;
   display: flex;
   align-items: center;
   @media (max-width: 768px) {
-  height: 200vh;
+  height: 245vh;
   }
   @media (max-width: 385px) {
-  height: 230vh;
+  height: 300vh;
   }
 `;
 
